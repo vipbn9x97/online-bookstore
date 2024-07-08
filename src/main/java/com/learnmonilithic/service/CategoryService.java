@@ -2,10 +2,11 @@ package com.learnmonilithic.service;
 
 import com.learnmonilithic.entity.Category;
 import com.learnmonilithic.payload.request.CategoryRequest;
-import org.springframework.data.domain.Page;
+
+import java.util.List;
 
 public interface CategoryService {
-    Page<Category> getCategories(CategoryRequest request);
+    List<Category> getCategories(CategoryRequest request);
 
     Category getCategoryById(Long id);
 

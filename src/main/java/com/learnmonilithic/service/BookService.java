@@ -8,7 +8,7 @@ import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 public interface BookService {
-    Page<Book> getBooks(BookRequest bookRequest, Pageable pageable);
+    List<Book> getBooks(BookRequest bookRequest);
 
     Book getBookById(Long id);
 
